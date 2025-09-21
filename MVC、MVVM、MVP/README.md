@@ -1,0 +1,7 @@
+MVP与MVVM区别：
+- MVP通过协议的方式会引用到View，而MVVM通过绑定的方式不会引用到View
+- MVP中View遵守协议，Presenter通过协议调用View的方法； MVVM中ViewModel通过block、delegate、KVO、Notification等方式与View进行通信
+- MVP中Presenter负责处理业务逻辑和数据处理，而MVVM中ViewModel负责处理业务逻辑和数据处理
+
+相同点：
+- Presenter与ViewModel都负责处理业务逻辑和数据处理, 使Controller的代码更加简洁和易于维护
